@@ -39,6 +39,11 @@ class STORE {
 		if ( file_exists( $this->project_dir ."/footer.php" ) ) { require_once $this->project_dir ."/footer.php"; }
 	}
 
+	/*
+	*	Function Name: get_item_price_info
+	*	Function Arguments: $item_id [INT] (required)
+	*	Function Purpose: This function will return price and quantity discount information for the given $item_id
+	*/
 	function get_item_price_info( $item_id ) {
 		$item_id = intval( $item_id );
 		if ( $item_id > 0 ) {
